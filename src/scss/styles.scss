@@ -1,0 +1,299 @@
+// Toggle global options
+$enable-gradients: true;
+$enable-shadows: true;
+
+$offcanvas-box-shadow: 0 1rem 3rem rgba(0, 0, 0, .175);
+
+// Include functions first
+@import "bootstrap/scss/functions";
+
+// Customize some defaults
+$body-color: #333;
+$body-bg: #fff;
+$border-radius: .4rem;
+$primary: rgb(79, 95, 0);
+$btn-link-color: #fff;
+
+// Required
+@import "bootstrap/scss/variables";
+@import "bootstrap/scss/variables-dark";
+@import "bootstrap/scss/maps";
+@import "bootstrap/scss/mixins";
+@import "bootstrap/scss/utilities";
+@import "bootstrap/scss/root";
+@import "bootstrap/scss/reboot";
+
+@import "bootstrap/scss/type";
+// @import "bootstrap/scss/images";
+@import "bootstrap/scss/containers";
+@import "bootstrap/scss/grid";
+// @import "bootstrap/scss/tables";
+@import "bootstrap/scss/forms";
+@import "bootstrap/scss/buttons";
+@import "bootstrap/scss/transitions";
+@import "bootstrap/scss/dropdown";
+// @import "bootstrap/scss/button-group";
+@import "bootstrap/scss/nav";
+// @import "bootstrap/scss/navbar"; // Requires nav
+@import "bootstrap/scss/card";
+// @import "bootstrap/scss/breadcrumb";
+@import "bootstrap/scss/accordion";
+// @import "bootstrap/scss/pagination";
+// @import "bootstrap/scss/badge";
+@import "bootstrap/scss/alert";
+// @import "bootstrap/scss/progress";
+// @import "bootstrap/scss/list-group";
+@import "bootstrap/scss/close";
+// @import "bootstrap/scss/toasts";
+@import "bootstrap/scss/modal"; // Requires transitions
+// @import "bootstrap/scss/tooltip";
+// @import "bootstrap/scss/popover";
+// @import "bootstrap/scss/carousel";
+@import "bootstrap/scss/spinners";
+// @import "bootstrap/scss/offcanvas"; // Requires transitions
+// @import "bootstrap/scss/placeholders";
+
+// Helpers
+@import "bootstrap/scss/helpers";
+
+// Utilities
+@import "bootstrap/scss/utilities/api";
+
+
+@font-face {
+    font-family: "Varela Round";
+    font-style: normal;
+    font-weight: 400;
+    src: url("/src/fonts/varela-round-v19-latin-regular.eot");
+    src: local(""), url("/src/fonts/varela-round-v19-latin-regular.eot?#iefix") format("embedded-opentype"),
+        url("/src/fonts/varela-round-v19-latin-regular.woff2") format("woff2"),
+        url("/src/fonts/varela-round-v19-latin-regular.woff") format("woff"),
+        url("/src/fonts/varela-round-v19-latin-regular.ttf") format("truetype"),
+        url("/src/fonts/varela-round-v19-latin-regular.svg#VarelaRound") format("svg");
+}
+
+body {
+    font-family: "Varela Round", sans-serif;
+    background-image: linear-gradient(180deg, rgba(79, 95, 0, 0.40), var(--bs-body-bg) 100px, var(--bs-body-bg));
+}
+
+#use-js {
+    visibility: hidden;
+}
+
+.heart {
+    color: red;
+}
+
+.logo {
+    width: 32px;
+    height: 32px;
+}
+
+.bi {
+    vertical-align: -.125em;
+    fill: currentColor;
+}
+
+.rounded-6 {
+    border-radius: 1rem;
+}
+
+.modal-dialog {
+    transition: bottom .75s ease-in-out;
+}
+
+.modal-footer {
+    padding-bottom: 2rem;
+}
+
+.border-right {
+    border-right: 1px solid #eee;
+}
+
+.bi-fw {
+    display: inherit;
+    width: 1.28571429em;
+    text-align: center;
+}
+
+.text-emphasis {
+    color: $primary !important;
+}
+
+.card {
+    border-radius: 40px;
+}
+
+#card-one {
+    background-color: #286028;
+    color: #fff;
+}
+
+#card-two {
+    background-color: #005d44;
+    color: #fff;
+}
+
+#card-three {
+    background-color: #005857;
+    color: #fff;
+}
+
+#card-four {
+    background-color: #495375;
+    color: #fff;
+}
+
+#card-five {
+    background-color: #09505d;
+    color: #fff;
+}
+
+#card-six {
+    background-color: #2f4858;
+    color: #fff;
+}
+
+.card {
+    border: none;
+    border-radius: 10px
+}
+
+.icon {
+    width: 50px;
+    height: 50px;
+    background-color: #eee;
+    color: $primary;
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 39px;
+}
+
+.text-shadow-1 {
+    text-shadow: 0 .125rem .25rem rgba(0, 0, 0, .25);
+}
+
+.text-shadow-2 {
+    text-shadow: 0 .25rem .5rem rgba(0, 0, 0, .25);
+}
+
+.text-shadow-3 {
+    text-shadow: 0 .5rem 1.5rem rgba(0, 0, 0, .25);
+}
+
+.card-cover {
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+}
+
+.spinner-container {
+    position: fixed;
+    visibility: hidden;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 9999;
+    opacity: 0;
+}
+
+.btn-primary {
+    color: #fff !important;
+}
+
+.spinner-border {
+    width: 3rem;
+    height: 3rem;
+    color: $primary;
+}
+
+.colored-footer {
+    background-image: linear-gradient(180deg, var(--bs-body-bg), rgba(79, 95, 0, 0.40) 80px, var(--bs-body-bg));
+}
+
+.dropzone-container {
+    min-height: auto;
+    text-align: center;
+    cursor: pointer;
+    border: var(--bs-border-width) var(--bs-border-style) var(--bs-border-color) !important;
+    box-shadow: 0 1rem 3rem rgba(0, 0, 0, .175) !important;
+    border-radius: .3rem !important;
+    position: relative;
+    display: flex;
+    min-height: 100px;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 10px;
+}
+
+.dropzone-input {
+    position: absolute;
+    display: block;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    cursor: pointer;
+    z-index: 1;
+}
+
+.dropzone-preview {
+    display: flex;
+    max-width: 100%;
+    align-items: center;
+}
+
+.dropzone-preview-image {
+    justify-content: center;
+    min-width: 500px;
+    max-width: 500px;
+    height: 500px;
+    margin-right: 10px;
+    background-size: contain;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+}
+
+.dropzone-preview-filename {
+    word-wrap: anywhere;
+}
+
+.dropzone-preview-button {
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 1;
+    border: none;
+    margin: 0;
+    padding: 0;
+    width: auto;
+    overflow: visible;
+    background: transparent;
+    color: inherit;
+    font: inherit;
+    line-height: normal;
+}
+
+.dropzone-preview-button::before {
+    content: '×';
+    padding: 3px 7px;
+    cursor: pointer;
+}
+
+.dropzone-placeholder {
+    flex-grow: 1;
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.dropzone-placeholder::before {
+    display: block;
+    margin-bottom: -0.5rem;
+    font-size: 3rem;
+    content: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='32' height='32' fill='rgb(153, 153, 153)' viewBox='0 0 16 16'%3E%3Cpath d='M8 2a5.53 5.53 0 0 0-3.594 1.342c-.766.66-1.321 1.52-1.464 2.383C1.266 6.095 0 7.555 0 9.318 0 11.366 1.708 13 3.781 13h8.906C14.502 13 16 11.57 16 9.773c0-1.636-1.242-2.969-2.834-3.194C12.923 3.999 10.69 2 8 2zm2.354 5.146a.5.5 0 0 1-.708.708L8.5 6.707V10.5a.5.5 0 0 1-1 0V6.707L6.354 7.854a.5.5 0 1 1-.708-.708l2-2a.5.5 0 0 1 .708 0l2 2z'/%3E%3C/svg%3E");
+}
