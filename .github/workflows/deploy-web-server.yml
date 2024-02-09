@@ -14,7 +14,7 @@ jobs:
     steps:
     - uses: actions/checkout@v2
 
-    - name: Build Biimage
+    - name: Build ByeBackground
       run: npm run build
 
     - name: Uploading to the Web server
