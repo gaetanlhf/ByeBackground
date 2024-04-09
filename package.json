@@ -9,23 +9,23 @@
         "test": "npm run build"
     },
     "dependencies": {
-        "@xenova/transformers": "^2.15.0",
-        "bootstrap": "^5.3.2",
+        "@xenova/transformers": "^2.16.1",
+        "bootstrap": "^5.3.3",
         "masonry-layout": "^4.2.2"
     },
     "devDependencies": {
-        "autoprefixer": "^10.4.17",
+        "autoprefixer": "^10.4.19",
         "copy-webpack-plugin": "^12.0.2",
         "html-loader": "^5.0.0",
-        "css-loader": "^6.10.0",
+        "css-loader": "^7.1.0",
         "file-loader": "^6.2.0",
         "html-webpack-plugin": "^5.6.0",
-        "postcss-loader": "^8.1.0",
-        "sass": "^1.70.0",
-        "sass-loader": "^14.1.0",
-        "style-loader": "^3.3.4",
-        "webpack": "^5.90.1",
+        "postcss-loader": "^8.1.1",
+        "sass": "^1.74.1",
+        "sass-loader": "^14.1.1",
+        "style-loader": "^4.0.0",
+        "webpack": "^5.91.0",
         "webpack-cli": "^5.1.4",
-        "webpack-dev-server": "^4.15.1"
+        "webpack-dev-server": "^5.0.4"
     }
 }
