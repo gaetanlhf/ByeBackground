@@ -1,4 +1,4 @@
-<p align="center"><img src="/assets/images/android-chrome-96x96.png"></p>
+<p align="center"><img src="/src/assets/images/android-chrome-96x96.png"></p>
 <h2 align="center">ByeBackground</h2>
 <p align="center">Remove image backgrounds effortlessly with this privacy-focused, browser-based tool, requiring only a single click</p>
 <p align="center">
