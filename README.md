@@ -31,7 +31,6 @@ This model is released under a Creative Commons license for non-commercial use.
 ### Install dependencies
 
 First check that you have **Node.js** and **npm** installed on your machine.  
-Then, **install PHP dependencies**:  
 Install **Node.js dependencies**:  
 ```bash
 npm install
